@@ -28,6 +28,8 @@ import {Approve} from "./scenes/approve";
 import Wordle from "./scenes/wordle/Wordle";
 import Note from "./scenes/notes/Note";
 import Zoom from "./scenes/zoom/Zoom";
+import Mystudents from "./scenes/mystudents";
+
 
 const App = () => {
   const navigate = useNavigate()
@@ -137,7 +139,7 @@ const App = () => {
                 
                 <Route
                   path="/mystudents"
-                  element={user ? <Alltutors /> : <Navigate to="/login" />}
+                  element={user ? <Mystudents /> : <Navigate to="/login" />}
                 />
                 <Route
                   path="/form"
