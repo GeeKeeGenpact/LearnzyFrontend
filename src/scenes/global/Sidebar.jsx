@@ -19,6 +19,7 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { elementAcceptingRef } from "@mui/utils";
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 
 const server_url=process.env.REACT_APP_SERVER_URL
 
@@ -247,7 +248,7 @@ const Sidebar = ({role}) => {
             <Item
               title="Chat"
               to="/chat"
-              icon={<CalendarTodayOutlinedIcon />}
+              icon={<ChatOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -422,7 +423,7 @@ const Sidebar = ({role}) => {
           <Item
               title="Chat"
               to="/chat"
-              icon={<CalendarTodayOutlinedIcon />}
+              icon={<ChatOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

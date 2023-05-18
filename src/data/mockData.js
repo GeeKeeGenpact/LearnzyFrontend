@@ -269,51 +269,57 @@ export const mockDataInvoices = [
 export const mockTransactions = [
   {
     txId: "Preethi",
-    science: "johndoe",
-    date: "English",
-    cost: "5",
+    
+    date: "6",
+    cost: "52",
   },
   {
     txId: "Rasmika",
-    science: "jackdower",
-    date: "Math",
-    cost: "5",
-  },
-  {
-    txId: "Bragadeesh",
-    science: "aberdohnny",
-    date: "GK",
-    cost: "4.5",
-  },
-  {
-    txId: "Gayatri",
-    science: "goodmanave",
-    date: "Science",
-    cost: "4",
+    
+    date: "7",
+    cost: "89",
   },
   {
     txId: "Ritvik",
-    science: "stevebower",
-    date: "English",
-    cost: "4",
+    
+    date: "6",
+    cost: "83",
   },
   {
     txId: "Pranav",
-    science: "aberdohnny",
-    date: "GK",
-    cost: "3.5",
+    
+    date: "6",
+    cost: "74",
   },
   {
     txId: "Akhil",
-    science: "wootzifer",
-    date: "Math",
-    cost: "3.5",
+    
+    date: "7",
+    cost: "86",
   },
   {
     txId: "Lokesh",
-    science: "jackdower",
-    date: "Science",
-    cost: "3.5",
+    
+    date: "8",
+    cost: "68",
+  },
+  {
+    txId: "Aarush",
+    
+    date: "8",
+    cost: "68",
+  },
+  {
+    txId: "Krishiv",
+    
+    date: "8",
+    cost: "56",
+  },
+  {
+    txId: "Ayansh",
+    
+    date: "8",
+    cost: "64",
   },
 ];
 
