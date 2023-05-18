@@ -20,6 +20,7 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import { elementAcceptingRef } from "@mui/utils";
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import VideocamOutlinedIcon from '@mui/icons-material/VideocamOutlined';
 
 const server_url=process.env.REACT_APP_SERVER_URL
 
@@ -223,7 +224,7 @@ const Sidebar = ({role}) => {
               selected={selected}
               setSelected={setSelected}
             />
-
+            
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -249,6 +250,13 @@ const Sidebar = ({role}) => {
               title="Chat"
               to="/chat"
               icon={<ChatOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Zoom"
+              to="/zoom"
+              icon={<VideocamOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -424,6 +432,13 @@ const Sidebar = ({role}) => {
               title="Chat"
               to="/chat"
               icon={<ChatOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Zoom"
+              to="/zoom"
+              icon={<VideocamOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

@@ -27,6 +27,7 @@ import {Allstudents} from "./scenes/allstudents";
 import {Approve} from "./scenes/approve";
 import Wordle from "./scenes/wordle/Wordle";
 import Note from "./scenes/notes/Note";
+import Zoom from "./scenes/zoom/Zoom";
 
 const App = () => {
   const navigate = useNavigate()
@@ -86,6 +87,10 @@ const App = () => {
                 <Route
                   path="/line"
                   element={user ? <Line /> : <Navigate to="/login" />}
+                />
+                <Route
+                  path="/zoom"
+                  element={user ? <Zoom /> : <Navigate to="/login" />}
                 />
                 <Route
                   path="/pie"
@@ -154,6 +159,10 @@ const App = () => {
                 <Route
                   path="/chat"
                   element={user ? <Chat /> : <Navigate to="/login" />}
+                />
+                <Route
+                  path="/zoom"
+                  element={user ? <Zoom /> : <Navigate to="/login" />}
                 />
                 
                 <Route
