@@ -10,7 +10,7 @@ let payload={
   passWord:'Ky5Fuv',
   userName:'Testing',
   userEmail:'',
-  leaveUrl:'https://localhost:3000'
+  leaveUrl:'https://learnzy.onrender.com'
 }
 
 export default function Zoom() {
