@@ -245,6 +245,13 @@ const Sidebar = ({role}) => {
               setSelected={setSelected}
             />
             <Item
+              title="Chat"
+              to="/chat"
+              icon={<CalendarTodayOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
               title="FAQ Page"
               to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
@@ -412,6 +419,13 @@ const Sidebar = ({role}) => {
             selected={selected}
             setSelected={setSelected}
           />
+          <Item
+              title="Chat"
+              to="/chat"
+              icon={<CalendarTodayOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
           <Item
             title="FAQ Page"
             to="/faq"

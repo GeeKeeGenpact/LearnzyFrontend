@@ -16,6 +16,7 @@ import Pie from "./scenes/pie";
 import FAQ from "./scenes/faq";
 import Geography from "./scenes/geography";
 import Calendar from "./scenes/calendar";
+import Chat from "./scenes/chat/Chat";
 
 import Dashboard from "./scenes/dashboard";
 // import { Login } from "@mui/icons-material";
@@ -73,6 +74,10 @@ const App = () => {
                 <Route
                   path="/notes"
                   element={user ? <Note /> : <Navigate to="/login" />}
+                />
+                <Route
+                  path="/chat"
+                  element={user ? <Chat /> : <Navigate to="/login" />}
                 />
                 <Route
                   path="/form"
@@ -145,6 +150,10 @@ const App = () => {
                 <Route
                   path="/faq"
                   element={user ? <FAQ /> : <Navigate to="/login" />}
+                />
+                <Route
+                  path="/chat"
+                  element={user ? <Chat /> : <Navigate to="/login" />}
                 />
                 
                 <Route

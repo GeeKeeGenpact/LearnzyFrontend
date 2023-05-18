@@ -8,6 +8,8 @@ export const useLogout = () => {
     //remove user from storage
     navigate('/')
     localStorage.removeItem("user");
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
 
     //dispatch logout
     dispatch({ type: "LOGOUT" });
