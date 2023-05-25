@@ -48,7 +48,7 @@ const App = () => {
           {user && <Layout role={role} />}
           <main className="content">
             {user && <Topbar />}
-            {role == "student" ? (
+            {role == "student" && (
               <Routes>
                 {/* <Route path="/" element={<LoginPage />} /> */}
                 <Route
@@ -119,7 +119,8 @@ const App = () => {
                   element={user ? <Calendar /> : <Navigate to="/login" />}
                 />
               </Routes>
-            ) : role == "tutor" ? (
+            )} 
+            {role == "tutor" && (
               <Routes>
                 <Route
                   path={"/"}
@@ -172,7 +173,8 @@ const App = () => {
                   element={user ? <Calendar /> : <Navigate to="/login" />}
                 />
               </Routes>
-            ) : (
+            ) } 
+            {role == "admin" && (
               <Routes>
                 <Route
                   path={"/"}
@@ -189,7 +191,6 @@ const App = () => {
                     user ? <Dashboard role={role} /> : <Navigate to="/login" />
                   }
                 />
-
                 <Route
                   path="/alltutors"
                   element={user ? <Alltutors /> : <Navigate to="/login" />}
@@ -209,6 +210,17 @@ const App = () => {
                 />
               </Routes>
             )}
+            <Routes>
+                <Route
+                  path={"/"}
+                  element={!user ? <Login /> : <Navigate to="/dashboard" />}
+                />
+                <Route
+                  path={"/login"}
+                  element={!user ? <Login /> : <Navigate to="/dashboard" />}
+                />
+                <Route path="/signup" element={!user ? <Signup /> : <Navigate to="/dashboard" />} />
+              </Routes>
           </main>
         </div>
       </ThemeProvider>
